@@ -10,6 +10,10 @@
   overflow: hidden;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 
+  .c-responsive-media__inner{
+    height: 100%;
+  }
+
 
   @include mq(sm){
     flex-direction: column;
@@ -26,11 +30,6 @@
     justify-content: center;
     height: 576px;
     display: flex;
-
-    @include mq(sm){
-      width: 100%;
-      height: fit-content;
-    }
 
     @include mq(sm-md){
       width: 100%;
@@ -71,7 +70,7 @@
     h3{
       text-align: center;
 
-      @include mq(sm-md){
+      @include mq(md){
        font-size: 24px;
       }
     }
