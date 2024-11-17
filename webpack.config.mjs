@@ -73,6 +73,7 @@ export default (env, argv) => {
             clean: {
                 keep: /.gitkeep|vendor.js/
             },
+            assetModuleFilename: 'assets/images/[name][ext]'
         },
         // Add support for importing only .js files
         resolve: { extensions: [".js"] },
@@ -80,6 +81,10 @@ export default (env, argv) => {
         plugins: plugins,
         module: {
             rules: [
+                {
+                    test: /\.(png|jpe?g|gif|svg)$/i,
+                    type: 'asset/resource', // Copies the image to the output folder
+                },
                 {
                     // Handle .js files with babel-loader
                     test: /\.(js)$/,

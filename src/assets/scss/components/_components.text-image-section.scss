@@ -1,0 +1,93 @@
+.c-text-image-section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @include mq(sm){
+    flex-direction: column;
+  }
+
+  @include mq(sm-md){
+    flex-direction: column;
+  }
+
+  &__image{
+    width: 50%;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    height: 576px;
+    display: flex;
+
+    @include mq(sm){
+      width: 100%;
+      height: fit-content;
+    }
+
+    @include mq(sm-md){
+      width: 100%;
+      height: fit-content;
+    }
+  }
+
+  &__content{
+    width: 50%;
+    font-family: $primary-font;
+    padding: 0 6.5rem;
+    height: 576px;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background: $primary-background;
+    margin: auto;
+
+    @include mq(sm){
+      width: 100%;
+      height: fit-content;
+      padding: 2rem 1rem;
+    }
+
+    @include mq(sm-md){
+      width: 100%;
+      height: fit-content;
+      padding: 2rem 1rem;
+    }
+
+    @include mq(md-lg){
+      padding: 1rem ;
+    }
+
+    h3{
+      text-align: center;
+
+
+      @include mq(sm){
+       font-size: 24px;
+      }
+
+      @include mq(sm-md){
+        font-size: 24px;
+      }
+    }
+
+    p{
+      text-align: center;
+      font-size: 18px;
+
+      @include mq(sm){
+        font-size: 16px;
+      }
+
+      @include mq(sm-md){
+        font-size: 16px;
+      }
+
+      @include mq(md-lg){
+        font-size: 16px;
+      }
+    }
+  }
+}
