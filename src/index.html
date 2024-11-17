@@ -8,22 +8,28 @@
 <body>
 <div id="app">
    <h1>Task 1</h1>
-    <section class="c-text-image-section">
-        <div class="c-text-image-section__image">
-            <figure class="c-responsive-media">
+
+<text-image-section>
+        <section class="c-text-image-section js-observe">
+            <div class="c-text-image-section__image">
+                <figure class="c-responsive-media">
                     <picture class="c-responsive-media__inner">
                         <source srcset="" media="(min-width: 1141px) and (max-width: 1920px)">
                         <source srcset="" media="(min-width: 641px) and (max-width: 1140px)">
                         <img class="c-responsive-media__img c-responsive-media__img--fit c-responsive-media__img--center" alt="" src="">
                     </picture>
-            </figure>
-        </div>
-        <div class="c-text-image-section__content">
-            <h3>Handcrafted and Responsibly Sourced</h3>
-            <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. </p>
-            <button class="c-button">Learn more</button>
-        </div>
-    </section>
+                </figure>
+            </div>
+            <div class="c-text-image-section__content">
+                <h3>Handcrafted and Responsibly Sourced</h3>
+                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. </p>
+                <p class="c-text-image-section__hidden-content js-hidden-section">This is a simple image + text section with a toggle animation and intersection observer effects.</p>
+                <button class="c-button js-toggle">Learn more</button>
+            </div>
+        </section>
+</text-image-section>
+
+
 </div>
 </body>
 </html>
