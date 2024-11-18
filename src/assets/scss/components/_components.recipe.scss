@@ -1,0 +1,39 @@
+.c-recipes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  padding: 10px;
+  gap: 4rem;
+
+  &__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @include mq(sm-md) {
+      flex-direction: column;
+    }
+
+    .c-image-graphic-card{
+      width: 30%;
+
+      @include mq(md-lg) {
+        width: 50%;
+      }
+
+      @include mq(sm-md) {
+        width: 100%;
+      }
+    }
+  }
+}

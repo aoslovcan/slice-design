@@ -1,0 +1,60 @@
+.c-image-graphic-card {
+  display: flex;
+  flex-direction: column;
+
+  &__image{
+    padding: 2rem;
+
+    img {
+      border-radius: 50%;
+      z-index: 3;
+      position: relative;
+    }
+  }
+
+  &__graphics {
+    position: absolute;
+    width: 150px;
+    z-index: 1;
+
+
+    &--top-left {
+      top: 0;
+      left: 0;
+    }
+
+    &--top-right {
+      top: 0;
+      right: 0;
+    }
+
+    &--bottom-left {
+      bottom: 0;
+      left: 0;
+    }
+
+    &--bottom-right {
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  &__image-wrapper {
+    position: relative;
+  }
+
+  &__header {
+    text-align: center;
+    padding: 0.5rem;
+
+    h3{
+
+      font-size: 31px;
+      font-weight: 600;
+      line-height: 39.6px;
+      @include mq(md){
+        font-size: 24px;
+      }
+    }
+  }
+}

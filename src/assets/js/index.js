@@ -1,13 +1,34 @@
 import '../scss/styles.scss';
 
 import textImage from '../images/text-image.svg';
+import recipe1 from '../images/recipe-1.svg';
+import recipe2 from "../images/recipe-2.svg";
+import recipe3 from "../images/recipe-3.svg";
+import graphic1 from '../images/graphic-1.svg';
+import graphic2 from "../images/graphic-2.svg";
+import graphic3 from "../images/graphic-3.png";
+import graphic4 from "../images/graphic-4.svg";
 import {TextImageSection} from "./components/TextImageSection"
 
 // Dynamically update the `src` of the image in your HTML
 const imgElement = document.querySelector('.c-text-image-section img');
 imgElement.src = textImage;
 
+const recipe1Img = document.querySelector('.js-image-1')
+const recipe2Img = document.querySelector('.js-image-2')
+const recipe3Img = document.querySelector('.js-image-3')
+const firstGraphic = document.querySelector('.js-graphic-1 ')
+const secondGraphic = document.querySelector('.js-graphic-2 ')
+const thirdGraphic = document.querySelector('.js-graphic-3 ')
+const fourthGraphic = document.querySelector('.js-graphic-4 ')
 
+recipe1Img.src = recipe1
+recipe2Img.src = recipe2
+recipe3Img.src = recipe3
+firstGraphic.src = graphic1
+secondGraphic.src = graphic2
+thirdGraphic.src = graphic3
+fourthGraphic.src = graphic4
 const ready = (callback) => {
     if (document.readyState !== "loading") {
         /**
