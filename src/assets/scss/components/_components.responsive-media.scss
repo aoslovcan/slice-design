@@ -27,6 +27,10 @@
       padding-bottom: 100%;
     }
 
+    &--1-quarter {
+      padding-bottom: percentage(1.25, 1);
+    }
+
     &--2-1 {
       padding-bottom: percentage(1, 2);
     }

@@ -8,6 +8,11 @@ import graphic1 from '../images/graphic-1.svg';
 import graphic2 from "../images/graphic-2.svg";
 import graphic3 from "../images/graphic-3.png";
 import graphic4 from "../images/graphic-4.svg";
+import person1 from "../images/man.jpg";
+import person2 from "../images/person-2.svg";
+
+
+import Slider from "./components/Slider";
 import {TextImageSection} from "./components/TextImageSection"
 
 // Dynamically update the `src` of the image in your HTML
@@ -22,6 +27,13 @@ const secondGraphic = document.querySelector('.js-graphic-2 ')
 const thirdGraphic = document.querySelector('.js-graphic-3 ')
 const fourthGraphic = document.querySelector('.js-graphic-4 ')
 
+const personImg1 = document.querySelectorAll(".js-person-1")
+const personImg2 = document.querySelector(".js-person-2")
+
+for(let i = 0; i < personImg1.length; i++){
+    personImg1[i].src = person1
+}
+
 recipe1Img.src = recipe1
 recipe2Img.src = recipe2
 recipe3Img.src = recipe3
@@ -29,6 +41,7 @@ firstGraphic.src = graphic1
 secondGraphic.src = graphic2
 thirdGraphic.src = graphic3
 fourthGraphic.src = graphic4
+personImg2.src = person2
 const ready = (callback) => {
     if (document.readyState !== "loading") {
         /**
@@ -58,5 +71,7 @@ const ready = (callback) => {
 
 
 ready(() => {
+    const slider = new Slider()
+    slider.init()
 
 });
