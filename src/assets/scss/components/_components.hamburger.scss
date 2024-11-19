@@ -1,0 +1,46 @@
+.c-hamburger {
+  @include mq(md-lg){
+    display: block;
+  }
+  display: none;
+  width: 24px;
+  height: 16px;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 10px;
+
+  span {
+    position: absolute;
+    height: 1.23px;
+    width: 100%;
+    background: $black;
+    transition: 0.5s;
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      top: 50%;
+    }
+
+    &:nth-child(3) {
+      top: 100%;
+    }
+  }
+}
+
+.c-hamburger.ham-active {
+  span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  span:nth-child(2) {
+    opacity: 0;
+    transform: translateY(-6px) rotate(45deg);
+  }
+
+  span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+}

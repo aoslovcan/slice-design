@@ -1,0 +1,42 @@
+.c-mobile-navigation {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 50;
+  top: 10vh;
+  background: #ffffff;
+  display: none;
+
+  @include mq(md-lg){
+    display: block;
+  }
+
+  &__inner {
+    padding-top: percentage(2, 24);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+
+    .c-menu{
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+
+      .c-navigation__menu-item{
+        opacity: 0;
+        transform: translateY(-20px);
+
+        a{
+          color: black;
+        ;
+        }
+      }
+    }
+  }
+
+  body.no-scroll {
+    overflow: hidden;
+  }
+}

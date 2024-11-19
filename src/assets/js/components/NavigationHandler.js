@@ -6,9 +6,13 @@ export default class NavigationHandler{
     constructor() {
         this.DOM = {
             navigationLink: ".js-nav-link",
+            mobileNav: ".js-mobile-nav",
+            toggleButton: ".js-toggle-nav",
         };
 
         this.navigationLinks = document.querySelectorAll(this.DOM.navigationLink)
+        this.mobileNav = document.querySelector(this.DOM.mobileNav)
+        this.toggleButton = document.querySelector(this.DOM.toggleButton)
     }
 
     init() {
@@ -21,6 +25,11 @@ export default class NavigationHandler{
                 this.navigationLinks[i].addEventListener("click", (e) => {
 
                     e.preventDefault();
+
+                    if(!this.mobileNav.classList.contains("hidden")){
+                        this.mobileNav.classList.toggle("hidden");
+                        this.toggleButton.classList.toggle("ham-active")
+                    }
                     this.navigationLinks.forEach(link => {
                         link.classList.remove("active");
                     });

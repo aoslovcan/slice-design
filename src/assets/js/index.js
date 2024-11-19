@@ -15,6 +15,7 @@ import person2 from "../images/person-2.svg";
 import Slider from "./components/Slider";
 import {TextImageSection} from "./components/TextImageSection"
 import NavigationHandler from "./components/NavigationHandler";
+import MobileNavigationHandler from "./components/MobileNavigationHandler";
 
 // Dynamically update the `src` of the image in your HTML
 const imgElement = document.querySelector('.c-text-image-section img');
@@ -77,4 +78,6 @@ ready(() => {
     const navigationHandler = new NavigationHandler()
     navigationHandler.init()
 
+    const mobileNavigationHandler = new MobileNavigationHandler()
+    mobileNavigationHandler.init()
 });

@@ -8,6 +8,9 @@
   background: white;
   z-index: 50;
 
+
+
+
   &__inner{
     width: 100%;
     padding-left:  percentage(1, 16);
@@ -20,6 +23,10 @@
     gap: 2rem;
     justify-items: center;
     flex-direction: row;
+
+    @include mq(md-lg){
+      display: none;
+    }
 
     &-item{
       font-family: $primary-font;
@@ -55,4 +62,10 @@
       }
     }
   }
+
+  &__actions{
+    display: flex;
+    justify-content: end;
+  }
+
 }
