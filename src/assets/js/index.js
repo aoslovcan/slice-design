@@ -1,4 +1,5 @@
 import '../scss/styles.scss';
+import {gsap} from "gsap";
 
 import textImage from '../images/text-image.svg';
 import recipe1 from '../images/recipe-1.svg';
@@ -16,6 +17,7 @@ import Slider from "./components/Slider";
 import {TextImageSection} from "./components/TextImageSection"
 import NavigationHandler from "./components/NavigationHandler";
 import MobileNavigationHandler from "./components/MobileNavigationHandler";
+import CursorController from "./components/CursorController";
 
 // Dynamically update the `src` of the image in your HTML
 const imgElement = document.querySelector('.c-text-image-section img');
@@ -44,6 +46,7 @@ secondGraphic.src = graphic2
 thirdGraphic.src = graphic3
 fourthGraphic.src = graphic4
 personImg2.src = person2
+
 const ready = (callback) => {
     if (document.readyState !== "loading") {
         /**
@@ -72,6 +75,10 @@ const ready = (callback) => {
 };
 
 ready(() => {
+
+    const cursorController = new CursorController()
+    cursorController.init()
+
     const slider = new Slider()
     slider.init()
 

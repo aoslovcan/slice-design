@@ -37,7 +37,7 @@
       border-radius: 100%;
       background: $black;
       border: none;
-      cursor: pointer;
+      cursor: none;
     }
 
     @include mq(sm-md){
