@@ -1,12 +1,12 @@
-import '../scss/styles.scss';
+import "../scss/styles.scss";
 import Slider from "./components/Slider";
-import {TextImageSection} from "./components/TextImageSection"
+import { TextImageSection } from "./components/TextImageSection";
 import NavigationHandler from "./components/NavigationHandler";
 import MobileNavigationHandler from "./components/MobileNavigationHandler";
 import CursorController from "./components/CursorController";
 
-import textImage from '../images/text-image.svg';
-import recipe1 from '../images/recipe-1.svg';
+import textImage from "../images/text-image.svg";
+import recipe1 from "../images/recipe-1.svg";
 import recipe2 from "../images/recipe-2.svg";
 import recipe3 from "../images/recipe-3.svg";
 import graphic1 from "../images/graphic-1.jpg";
@@ -44,16 +44,15 @@ const ready = (callback) => {
 };
 
 ready(() => {
+    const cursorController = new CursorController();
+    cursorController.init();
 
-    const cursorController = new CursorController()
-    cursorController.init()
+    const slider = new Slider();
+    slider.init();
 
-    const slider = new Slider()
-    slider.init()
+    const navigationHandler = new NavigationHandler();
+    navigationHandler.init();
 
-    const navigationHandler = new NavigationHandler()
-    navigationHandler.init()
-
-    const mobileNavigationHandler = new MobileNavigationHandler()
-    mobileNavigationHandler.init()
+    const mobileNavigationHandler = new MobileNavigationHandler();
+    mobileNavigationHandler.init();
 });

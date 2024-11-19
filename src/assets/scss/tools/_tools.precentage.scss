@@ -8,5 +8,5 @@
  * padding-left: percentage(1, 24);
  */
 @function percentage($num1, $num2) {
-  @return math.percentage(math.div($num1, $num2));
+    @return math.percentage(math.div($num1, $num2));
 }

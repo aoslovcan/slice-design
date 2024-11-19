@@ -1,74 +1,70 @@
 .c-slider-section {
-  padding: $padding-xl;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  background: $secondary-background;
-
-  .c-button{
-    width: fit-content;
-    position: relative;
-    border-radius: 5px;
-  }
-
-  @include mq(sm-md){
-    padding: $padding-sm;
-  }
-
-  &__actions{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
     padding: $padding-xl;
-    flex-shrink: 0;
-
-    button{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 32px;
-      height: 32px;
-      border-radius: 100%;
-      background: $black;
-      border: none;
-      cursor: none;
-    }
-
-    @include mq(sm-md){
-      padding: $padding-sm;
-    }
-  }
-
-  &__content{
     position: relative;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: $secondary-background;
 
-    .swiper-wrapper {
-      display: flex;
-      align-items: center;
+    .c-button {
+        width: fit-content;
+        position: relative;
+        border-radius: 5px;
+    }
 
-      .swiper-slide {
+    @include mq(sm-md) {
+        padding: $padding-sm;
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        padding: $padding-xl;
         flex-shrink: 0;
-        width: 34%;
 
-        @include mq(md-lg) {
-          width: 50%;
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 100%;
+            background: $black;
+            border: none;
+            cursor: none;
         }
 
         @include mq(sm-md) {
-          width: 95.5%;
+            padding: $padding-sm;
         }
-      }
     }
-  }
+
+    &__content {
+        position: relative;
+        overflow: hidden;
+
+        .swiper-wrapper {
+            display: flex;
+            align-items: center;
+
+            .swiper-slide {
+                flex-shrink: 0;
+                width: 34%;
+
+                @include mq(md-lg) {
+                    width: 50%;
+                }
+
+                @include mq(sm-md) {
+                    width: 95.5%;
+                }
+            }
+        }
+    }
 }
-
-
-
-

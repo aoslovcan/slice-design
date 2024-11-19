@@ -2,15 +2,16 @@
 
 $primary-font: "FiraSana", sans-serif;
 
-$primary-background: #E3CFCF;
+$primary-background: #e3cfcf;
 $primary-dark-background: #c69f9f;
-$secondary-background: #F3EDE5;
+$secondary-background: #f3ede5;
 $black: #000000;
 $rounded-sm: 5px;
 
 $border-primary: 1px solid $black;
-$shadow-primary: 0 0 15px rgba(128, 128, 128, 0.6), 0 0 30px rgba(128, 128, 128, 0.4);
+$shadow-primary:
+    0 0 15px rgba(128, 128, 128, 0.6),
+    0 0 30px rgba(128, 128, 128, 0.4);
 
 $padding-xl: 6rem 0 6rem 4rem;
 $padding-sm: 4rem 0 4rem 1rem;
-

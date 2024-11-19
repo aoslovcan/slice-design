@@ -35,13 +35,13 @@ class TextImageSection extends HTMLElement {
 
     toggleContent() {
         this.section.classList.toggle("is-active"); // Toggle active state for the section
-        this.button.classList.toggle("hidden")
+        this.button.classList.toggle("hidden");
     }
 
     initIntersectionObserver() {
         const observerOptions = {
             root: null,
-            threshold: 0.1
+            threshold: 0.1,
         };
 
         // Initialize the IntersectionObserver

@@ -1,4 +1,4 @@
-import {gsap} from "gsap";
+import { gsap } from "gsap";
 
 export default class CursorController {
     constructor() {
@@ -17,9 +17,9 @@ export default class CursorController {
     }
 
     init() {
-        this.onMouseMove()
-        this.onHoverScale()
-        this.movementAnimation()
+        this.onMouseMove();
+        this.onHoverScale();
+        this.movementAnimation();
     }
 
     onMouseMove() {
@@ -28,7 +28,6 @@ export default class CursorController {
             this.mouseY = e.clientY;
         });
     }
-
 
     onHoverScale() {
         if (this.cursorScale.length) {
@@ -68,6 +67,4 @@ export default class CursorController {
             },
         });
     }
-
-
 }

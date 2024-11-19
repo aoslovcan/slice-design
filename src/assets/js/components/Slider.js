@@ -1,4 +1,4 @@
-import Swiper from "swiper"
+import Swiper from "swiper";
 
 export default class Slider {
     constructor() {
@@ -12,19 +12,18 @@ export default class Slider {
         this.slider = document.querySelector(this.DOM.slider);
         this.next = document.querySelector(this.DOM.next);
         this.prev = document.querySelector(this.DOM.prev);
-        this.toggleButton = document.querySelector(this.DOM.toggleButton)
+        this.toggleButton = document.querySelector(this.DOM.toggleButton);
         this.swiper = null;
     }
 
     init() {
         if (this.slider) {
-            this.initSwiper()
+            this.initSwiper();
 
             if (this.swiper) {
                 this.swiper.on("slideChange", () => {
                     console.log(`Active slide index: ${this.swiper.activeIndex}`);
                 });
-
 
                 this.prev.addEventListener("click", (ev) => {
                     this.swiper.slidePrev();
@@ -35,8 +34,7 @@ export default class Slider {
                 });
             }
 
-            this.toggleSlider()
-
+            this.toggleSlider();
         }
     }
 
@@ -47,9 +45,9 @@ export default class Slider {
                     this.swiper.destroy(true, true);
                     this.swiper = null;
                 } else {
-                    this.initSwiper()
+                    this.initSwiper();
                 }
-            })
+            });
         }
     }
 
@@ -70,6 +68,5 @@ export default class Slider {
                 prevEl: ".js-slider-prev",
             },
         });
-
     }
 }

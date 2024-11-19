@@ -1,8 +1,8 @@
-import {gsap} from "gsap";
+import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
 gsap.registerPlugin(ScrollToPlugin);
-export default class NavigationHandler{
+export default class NavigationHandler {
     constructor() {
         this.DOM = {
             navigationLink: ".js-nav-link",
@@ -10,27 +10,26 @@ export default class NavigationHandler{
             toggleButton: ".js-toggle-nav",
         };
 
-        this.navigationLinks = document.querySelectorAll(this.DOM.navigationLink)
-        this.mobileNav = document.querySelector(this.DOM.mobileNav)
-        this.toggleButton = document.querySelector(this.DOM.toggleButton)
+        this.navigationLinks = document.querySelectorAll(this.DOM.navigationLink);
+        this.mobileNav = document.querySelector(this.DOM.mobileNav);
+        this.toggleButton = document.querySelector(this.DOM.toggleButton);
     }
 
     init() {
-        this.toggleActive()
+        this.toggleActive();
     }
 
-    toggleActive(){
-        if(this.navigationLinks.length){
-            for(let i=0; i < this.navigationLinks.length; i++){
+    toggleActive() {
+        if (this.navigationLinks.length) {
+            for (let i = 0; i < this.navigationLinks.length; i++) {
                 this.navigationLinks[i].addEventListener("click", (e) => {
-
                     e.preventDefault();
 
-                    if(!this.mobileNav.classList.contains("hidden")){
+                    if (!this.mobileNav.classList.contains("hidden")) {
                         this.mobileNav.classList.toggle("hidden");
-                        this.toggleButton.classList.toggle("ham-active")
+                        this.toggleButton.classList.toggle("ham-active");
                     }
-                    this.navigationLinks.forEach(link => {
+                    this.navigationLinks.forEach((link) => {
                         link.classList.remove("active");
                     });
 
@@ -41,12 +40,12 @@ export default class NavigationHandler{
                     }
 
                     this.navigationLinks[i].classList.add("active");
-                })
+                });
             }
         }
     }
 
-    scrollToSection(section, e){
+    scrollToSection(section, e) {
         if (!section) return;
 
         const elem = document.querySelector(section);
@@ -62,7 +61,7 @@ export default class NavigationHandler{
         }
     }
 
-    getAnchor (link) {
+    getAnchor(link) {
         if (
             link.protocol !== window.location.protocol ||
             link.host !== window.location.host ||

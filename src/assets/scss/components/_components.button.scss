@@ -1,35 +1,37 @@
-.c-button{
-  font-family: $primary-font;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 18.2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.75rem 1.5rem;
-  border: $border-primary;
-  background: transparent;
-  cursor: none;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+.c-button {
+    font-family: $primary-font;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18.2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border: $border-primary;
+    background: transparent;
+    cursor: none;
+    transition:
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
 
-  &--link{
-    border: none;
-    padding: 0;
-    border-bottom: $border-primary;
-    box-shadow: none;
-  }
+    &--link {
+        border: none;
+        padding: 0;
+        border-bottom: $border-primary;
+        box-shadow: none;
+    }
 
-  &--square{
-    border-radius: $rounded-sm;
-  }
+    &--square {
+        border-radius: $rounded-sm;
+    }
 
-  &:hover{
-    box-shadow: $shadow-primary;
-    transform: translateY(-2px);
-  }
+    &:hover {
+        box-shadow: $shadow-primary;
+        transform: translateY(-2px);
+    }
 
-  &--link:hover{
-      box-shadow: none;
-      transform: none;
-  }
+    &--link:hover {
+        box-shadow: none;
+        transform: none;
+    }
 }
