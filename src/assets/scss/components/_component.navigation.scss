@@ -1,0 +1,58 @@
+.c-navigation{
+  box-shadow: $shadow-primary;
+  position: sticky;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  top:0;
+  background: white;
+  z-index: 50;
+
+  &__inner{
+    width: 100%;
+    padding-left:  percentage(1, 16);
+    padding-right: percentage(1, 16);
+  }
+
+  &__menu{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-items: center;
+    flex-direction: row;
+
+    &-item{
+      font-family: $primary-font;
+      text-transform: uppercase;
+      letter-spacing: 0.05rem;
+
+      a{
+        padding-bottom: 4px;
+        font-size: 18px;
+        text-decoration: none;
+        color: $black;
+        cursor: pointer;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -6px;
+          width: 0;
+          height: 6px;
+          background-color: $primary-background;
+          transition: width 0.3s ease-in-out;
+        }
+
+        &:hover::after, a.active::after {
+          width: 100%;
+        }
+
+        &.active::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

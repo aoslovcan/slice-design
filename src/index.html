@@ -7,129 +7,152 @@
 </head>
 <body>
 <div id="app">
-    <h1>Task 1</h1>
-    <text-image-section>
-        <section class="c-text-image-section js-observe">
-            <div class="c-text-image-section__image">
-                <figure class="c-responsive-media">
-                    <picture class="c-responsive-media__inner">
-                        <source srcset="" media="(min-width: 1141px) and (max-width: 1920px)">
-                        <source srcset="" media="(min-width: 641px) and (max-width: 1140px)">
-                        <img class="c-responsive-media__img c-responsive-media__img--fit c-responsive-media__img--center"
-                             alt="" src="">
-                    </picture>
-                </figure>
+
+    <div class="c-navigation">
+        <div class="c-navigation__inner">
+            <ul class="c-navigation__menu">
+                <li class="c-navigation__menu-item " id="nav-task1">
+                    <a class="js-nav-link" href="#task1">Task 1</a>
+                </li>
+                <li class="c-navigation__menu-item" id="nav-task2">
+                    <a class="js-nav-link" href="#task2">Task 2</a>
+                </li>
+                <li class="c-navigation__menu-item" id="nav-task3">
+                    <a class="js-nav-link"  href="#task3">Task 3</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="o-section" id="task1">
+        <div class="o-section__title"><h1 class="text-underline">Task 1</h1></div>
+        <text-image-section>
+            <section class="c-text-image-section js-observe">
+                <div class="c-text-image-section__image">
+                    <figure class="c-responsive-media">
+                        <picture class="c-responsive-media__inner">
+                            <source srcset="" media="(min-width: 1141px) and (max-width: 1920px)">
+                            <source srcset="" media="(min-width: 641px) and (max-width: 1140px)">
+                            <img class="c-responsive-media__img c-responsive-media__img--fit c-responsive-media__img--center"
+                                 alt="" src="">
+                        </picture>
+                    </figure>
+                </div>
+                <div class="c-text-image-section__content">
+                    <h3>Handcrafted and Responsibly Sourced</h3>
+                    <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
+                        demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee
+                        the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their
+                        duty through weakness of will, which is the same as saying through shrinking from toil and
+                        pain. </p>
+                    <p class="c-text-image-section__hidden-content js-hidden-section">
+                        On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
+                        demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee
+                        the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their
+                        duty through weakness of will, which is the same as saying through shrinking from toil and pain.
+                    </p>
+                    <button class="c-button js-toggle">Learn more</button>
+                </div>
+            </section>
+        </text-image-section>
+    </div>
+
+    <div class="o-section" id="task2">
+        <div class="o-section__title"><h1 class="text-underline">Task 2</h1></div>
+        <section class="c-recipes">
+            <div class="c-recipes__header">
+                <h1 class="uppercase">OUR Recipes</h1>
+                <p>Great on its own or as a mixer. Fun cocktail & mocktail recipes to try.</p>
+                <button class="c-button c-button--link">VIEW ALL RECIPES</button>
             </div>
-            <div class="c-text-image-section__content">
-                <h3>Handcrafted and Responsibly Sourced</h3>
-                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
-                    demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee
-                    the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their
-                    duty through weakness of will, which is the same as saying through shrinking from toil and
-                    pain. </p>
-                <p class="c-text-image-section__hidden-content js-hidden-section">
-                    On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
-                    demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee
-                    the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their
-                    duty through weakness of will, which is the same as saying through shrinking from toil and pain.
-                </p>
-                <button class="c-button js-toggle">Learn more</button>
+
+            <div class="c-recipes__list">
+                <div class="c-image-graphic-card">
+                    <div class="c-image-graphic-card__image-wrapper">
+                        <div class="c-image-graphic-card__image">
+                            <img class="js-image-1" alt="" src=""/>
+                        </div>
+                        <img class="c-image-graphic-card__graphics c-image-graphic-card__graphics--top-left js-graphic-1"
+                             src="" alt=""/>
+                    </div>
+
+                    <div class="c-image-graphic-card__header">
+                        <h3 class="uppercase">Sparkling Triple Citrus & Mint Mocktail</h3>
+                    </div>
+                </div>
+
+                <div class="c-image-graphic-card">
+                    <div class="c-image-graphic-card__image-wrapper">
+                        <div class="c-image-graphic-card__image">
+                            <img alt="" src="" class="js-image-2"/>
+                        </div>
+                        <img class="c-image-graphic-card__graphics c-image-graphic-card__graphics--top-right js-graphic-2"
+                             src="" alt=""/>
+                        <img class="c-image-graphic-card__graphics c-image-graphic-card__graphics--bottom-left js-graphic-3"
+                             src="" alt=""/>
+                    </div>
+
+                    <div class="c-image-graphic-card__header">
+                        <h3 class="uppercase">Sparkling Triple Citrus & Mint Mocktail</h3>
+                    </div>
+                </div>
+
+                <div class="c-image-graphic-card">
+                    <div class="c-image-graphic-card__image-wrapper">
+                        <div class="c-image-graphic-card__image">
+                            <img alt="" src="" class="js-image-3"/>
+                        </div>
+                        <img class="c-image-graphic-card__graphics c-image-graphic-card__graphics--bottom-right js-graphic-4"
+                             src="" alt=""/>
+                    </div>
+
+                    <div class="c-image-graphic-card__header">
+                        <h3 class="uppercase">Sparkling Triple Citrus & Mint Mocktail</h3>
+                    </div>
+                </div>
             </div>
         </section>
-    </text-image-section>
+    </div>
 
-    <h1>Task 2</h1>
-    <section class="c-recipes">
-        <div class="c-recipes__header">
-            <h1 class="uppercase">OUR Recipes</h1>
-            <p>Great on its own or as a mixer. Fun cocktail & mocktail recipes to try.</p>
-            <button class="c-button c-button--link">VIEW ALL RECIPES</button>
-        </div>
+    <div class="o-section" id="task3">
+        <div  class="o-section__title"><h1 class="text-underline">Task 3</h1></div>
+        <section class="c-slider-section">
+            <button class="c-button js-toggle-swiper">Toggle swiper</button>
+            <div class="c-slider-section__actions">
+                <button class="js-slider-prev">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1288_33)">
+                            <path d="M13.3334 7.33333H5.22002L8.94669 3.60667L8.00002 2.66667L2.66669 8L8.00002 13.3333L8.94002 12.3933L5.22002 8.66667H13.3334V7.33333Z"
+                                  fill="white"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_1288_33">
+                                <rect width="16" height="16" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
 
-        <div class="c-recipes__list">
-            <div class="c-image-graphic-card">
-                <div class="c-image-graphic-card__image-wrapper">
-                    <div class="c-image-graphic-card__image">
-                        <img class="js-image-1" alt="" src=""/>
-                    </div>
-                    <img class="c-image-graphic-card__graphics c-image-graphic-card__graphics--top-left js-graphic-1"
-                         src="" alt=""/>
-                </div>
+                </button>
 
-                <div class="c-image-graphic-card__header">
-                    <h3 class="uppercase">Sparkling Triple Citrus & Mint Mocktail</h3>
-                </div>
+                <button class="js-slider-next">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1288_37)">
+                            <path d="M8.00002 2.66667L7.06002 3.60667L10.78 7.33333H2.66669V8.66667H10.78L7.06002 12.3933L8.00002 13.3333L13.3334 8L8.00002 2.66667Z"
+                                  fill="white"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_1288_37">
+                                <rect width="16" height="16" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                </button>
             </div>
-
-            <div class="c-image-graphic-card">
-                <div class="c-image-graphic-card__image-wrapper">
-                    <div class="c-image-graphic-card__image">
-                        <img alt="" src="" class="js-image-2"/>
-                    </div>
-                    <img class="c-image-graphic-card__graphics c-image-graphic-card__graphics--top-right js-graphic-2"
-                         src="" alt=""/>
-                    <img class="c-image-graphic-card__graphics c-image-graphic-card__graphics--bottom-left js-graphic-3"
-                         src="" alt=""/>
-                </div>
-
-                <div class="c-image-graphic-card__header">
-                    <h3 class="uppercase">Sparkling Triple Citrus & Mint Mocktail</h3>
-                </div>
-            </div>
-
-            <div class="c-image-graphic-card">
-                <div class="c-image-graphic-card__image-wrapper">
-                    <div class="c-image-graphic-card__image">
-                        <img alt="" src="" class="js-image-3"/>
-                    </div>
-                    <img class="c-image-graphic-card__graphics c-image-graphic-card__graphics--bottom-right js-graphic-4"
-                         src="" alt=""/>
-                </div>
-
-                <div class="c-image-graphic-card__header">
-                    <h3 class="uppercase">Sparkling Triple Citrus & Mint Mocktail</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="c-slider-section">
-        <button class="c-button js-toggle-swiper">Toggle swiper</button>
-        <div class="c-slider-section__actions">
-            <button class="js-slider-prev">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_1288_33)">
-                        <path d="M13.3334 7.33333H5.22002L8.94669 3.60667L8.00002 2.66667L2.66669 8L8.00002 13.3333L8.94002 12.3933L5.22002 8.66667H13.3334V7.33333Z"
-                              fill="white"/>
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_1288_33">
-                            <rect width="16" height="16" fill="white"/>
-                        </clipPath>
-                    </defs>
-                </svg>
-
-            </button>
-
-            <button class="js-slider-next">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_1288_37)">
-                        <path d="M8.00002 2.66667L7.06002 3.60667L10.78 7.33333H2.66669V8.66667H10.78L7.06002 12.3933L8.00002 13.3333L13.3334 8L8.00002 2.66667Z"
-                              fill="white"/>
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_1288_37">
-                            <rect width="16" height="16" fill="white"/>
-                        </clipPath>
-                    </defs>
-                </svg>
-
-            </button>
-        </div>
-        <div class="c-slider-section__content js-slider">
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
+            <div class="c-slider-section__content js-slider">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
                         <figure class="c-responsive-media">
                             <picture class="c-responsive-media__inner c-responsive-media__inner--1-quarter">
                                 <source srcset="" media="(min-width: 1141px) and (max-width: 1920px)">
@@ -138,8 +161,8 @@
                                      alt="" src="">
                             </picture>
                         </figure>
-                </div>
-                <div class="swiper-slide">
+                    </div>
+                    <div class="swiper-slide">
                         <figure class="c-responsive-media">
                             <picture class="c-responsive-media__inner c-responsive-media__inner--1-quarter">
                                 <source srcset="" media="(min-width: 1141px) and (max-width: 1920px)">
@@ -148,8 +171,8 @@
                                      alt="" src="">
                             </picture>
                         </figure>
-                </div>
-                <div class="swiper-slide">
+                    </div>
+                    <div class="swiper-slide">
                         <figure class="c-responsive-media">
                             <picture class="c-responsive-media__inner c-responsive-media__inner--1-quarter">
                                 <source srcset="" media="(min-width: 1141px) and (max-width: 1920px)">
@@ -158,10 +181,11 @@
                                      alt="" src="">
                             </picture>
                         </figure>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 </div>
 </body>
 </html>

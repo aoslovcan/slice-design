@@ -16,6 +16,7 @@
     border: none;
     padding: 0;
     border-bottom: $border-primary;
+    box-shadow: none;
   }
 
   &--square{
@@ -25,5 +26,10 @@
   &:hover{
     box-shadow: $shadow-primary;
     transform: translateY(-2px);
+  }
+
+  &--link:hover{
+      box-shadow: none;
+      transform: none;
   }
 }
