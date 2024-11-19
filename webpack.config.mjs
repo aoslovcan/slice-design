@@ -28,7 +28,7 @@ export default (env, argv) => {
             {
 
                 server: {
-                    baseDir: "static/dist", // Serve the `dist` folder
+                    baseDir: "static/dist",
                 },
                 files: ["static/dist/*.js", "static/dist/*.css", "**/*.html"],
                 injectCss: true,
@@ -47,9 +47,9 @@ export default (env, argv) => {
         }),
 
         new HtmlWebpackPlugin({
-            template: "./src/index.html", // Path to your base HTML file
-            filename: "index.html", // Output file name in the dist directory
-            inject: "body", // Inject scripts before the closing </body> tag
+            template: "./src/index.html",
+            filename: "index.html",
+            inject: "body",
         }),
     ];
 
@@ -83,10 +83,9 @@ export default (env, argv) => {
             rules: [
                 {
                     test: /\.(png|jpe?g|gif|svg)$/i,
-                    type: 'asset/resource', // Copies the image to the output folder
+                    type: 'asset/resource',
                 },
                 {
-                    // Handle .js files with babel-loader
                     test: /\.(js)$/,
                     exclude: /node_modules/,
                     use: ["babel-loader"],
