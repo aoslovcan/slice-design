@@ -1,16 +1,19 @@
 .c-slider-section {
-  padding: 6rem 0 6rem 4rem;
+  padding: $padding-xl;
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  background: $secondary-background;
 
   .c-button{
     width: fit-content;
+    position: relative;
+    border-radius: 5px;
   }
 
   @include mq(sm-md){
-    padding: 4rem 0 4rem 1rem;
+    padding: $padding-sm;
   }
 
   &__actions{
@@ -22,7 +25,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-    padding: 6rem 0 6rem 4rem;
+    padding: $padding-xl;
     flex-shrink: 0;
 
     button{
@@ -38,7 +41,7 @@
     }
 
     @include mq(sm-md){
-      padding: 4rem 0 4rem 1rem;
+      padding: $padding-sm;
     }
   }
 

@@ -6,14 +6,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 24px;
-  border: 1px solid $black;
+  padding: 0.75rem 1.5rem;
+  border: $border-primary;
   background: transparent;
   cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 
   &--link{
     border: none;
     padding: 0;
-    border-bottom: 1px solid $black;
+    border-bottom: $border-primary;
+  }
+
+  &--square{
+    border-radius: $rounded-sm;
+  }
+
+  &:hover{
+    box-shadow: $shadow-primary;
+    transform: translateY(-2px);
   }
 }

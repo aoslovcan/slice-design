@@ -69,7 +69,6 @@ const ready = (callback) => {
      */
 };
 
-
 ready(() => {
     const slider = new Slider()
     slider.init()
